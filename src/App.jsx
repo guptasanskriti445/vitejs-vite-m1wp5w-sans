@@ -6,7 +6,6 @@ function App() {
     <>
       <div className="max-w-screen-2xl mx-auto md:px-4">
         <Header />
-        <Button>Click me</Button>
         <div className="min-h-[calc(100vh - 400px)]">
           <Outlet />
         </div>
