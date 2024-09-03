@@ -15,7 +15,7 @@ const Header = () => {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Link to="/typing-speed-test">
+        <Link to="/registation">
         <Button>Get started</Button>
         </Link>
        

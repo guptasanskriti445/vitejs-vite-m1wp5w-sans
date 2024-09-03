@@ -7,6 +7,7 @@ import Home from './pages/home/Home.jsx';
 import TypingApp from './pages/typer/typingApp.jsx';
 import { store } from './redux/store.js';
 import { Provider } from 'react-redux'
+import RegistationForm from './pages/register/RegistationForm.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/typing-speed-test',
         element: <TypingApp />,
+      },
+      {
+        path: '/registation',
+        element: <RegistationForm />,
       },
     ],
   },
