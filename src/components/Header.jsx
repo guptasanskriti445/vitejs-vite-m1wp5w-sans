@@ -1,4 +1,5 @@
 import { Button, Navbar } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -14,7 +15,10 @@ const Header = () => {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
+        <Link to="/typing-speed-test">
         <Button>Get started</Button>
+        </Link>
+       
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>

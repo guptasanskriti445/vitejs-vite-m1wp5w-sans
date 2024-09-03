@@ -1,15 +1,15 @@
 import { Carousel } from "flowbite-react";
-
+import heroImg1 from "../assets/hero1.avif"
+import heroImg2 from "../assets/hero2.avif"
+import heroImg3 from "../assets/hero3.avif"
 const Hero = () =>
 {
  return (
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel slideInterval={5000}>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+        <img src={heroImg1} alt="..." />
+        <img src={heroImg2} alt="..." />
+        <img src={heroImg3} alt="..." />
       </Carousel>
     </div>
   );
