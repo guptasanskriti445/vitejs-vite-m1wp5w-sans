@@ -7,10 +7,18 @@ const RegistationForm = () => {
     <div className="mt-8 space-y-4 px-4 flex flex-row  justify-center"> 
       <form className="flex max-w-md flex-col gap-4">
     <div>
+    <div className='flex flex-col-6'>
       <div className="mb-2 block">
         <Label htmlFor="email2" value="Your email" />
       </div>
       <TextInput id="email2" type="email" placeholder="name@flowbite.com" required shadow />
+    </div>
+    <div>
+      <div className="mb-2 block">
+        <Label htmlFor="email2" value="Your email" />
+      </div>
+      <TextInput id="email2" type="email" placeholder="name@flowbite.com" required shadow />
+    </div>
     </div>
     <div>
       <div className="mb-2 block">
