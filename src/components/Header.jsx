@@ -1,7 +1,12 @@
 import { Button, Navbar } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
+// import LoginForm from './pages/login/LoginForm';
+// import RegistationForm from './pages/register/RegistationForm';
 const Header = () => {
+  const [isLogin, setIsLogin] = useState(false);
+  const user = useSelector((state) => state.auth.user);
   return (
     <Navbar fluid rounded>
       <Navbar.Brand href="/">
@@ -18,8 +23,47 @@ const Header = () => {
         <Link to="/registation">
         <Button>Get started</Button>
         </Link>
-       
+        {isLogin ? (
+              <>
+               <Link to="/typing-speed-test">
+        <Button>Get started</Button>
+        </Link>
+              </>
+            ) : (
+              <>
+                {/* Already have an account?{' '} */}
+                <Button  onClick={() => setIsLogin(true)}>
+                Get started
+                </Button>
+              </>
+            )}
         <Navbar.Toggle />
+        {/* <div className="App">
+      {user ? (
+        <h2>Welcome, {user.username}!</h2>
+      ) : (
+        <>
+          {isLogin ? <LoginForm /> : <RegistationForm />}
+          <p className="text-center">
+            {isLogin ? (
+              <>
+                Don't have an account?{' '}
+                <button className="text-blue-500" onClick={() => setIsLogin(false)}>
+                  Register
+                </button>
+              </>
+            ) : (
+              <>
+                Already have an account?{' '}
+                <button className="text-blue-500" onClick={() => setIsLogin(true)}>
+                  Login
+                </button>
+              </>
+            )}
+          </p>
+        </>
+      )}
+    </div> */}
       </div>
       <Navbar.Collapse>
         <Navbar.Link href="#" active>

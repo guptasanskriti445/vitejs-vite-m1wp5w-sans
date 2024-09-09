@@ -8,6 +8,7 @@ import TypingApp from './pages/typer/typingApp.jsx';
 import { store } from './redux/store.js';
 import { Provider } from 'react-redux'
 import RegistationForm from './pages/register/RegistationForm.jsx';
+import LoginForm from './pages/login/LoginForm.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/registation',
         element: <RegistationForm />,
+      },
+      {
+        path: '/login',
+        element: <LoginForm />,
       },
     ],
   },
